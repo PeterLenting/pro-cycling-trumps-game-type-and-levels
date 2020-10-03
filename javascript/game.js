@@ -458,7 +458,7 @@ function showAnswer() {
     $(".flip-card-inner").flip('toggle');
     setTimeout(function () {
         $("#newImage, #newImageBack").attr('src', addAnswerToImage);  
-    }, 200);
+    }, 150);
     var addAnswerToImage = $("#newImage, #newImageBack").attr('src').replace("-empty", "").replace("-flag", "");
 } 
     
@@ -474,10 +474,8 @@ function showAnswer() {
 function wrongAnswer() { 
     $('#soundOfWrongAnswer')[0].play();
     if ($("#newImage").hasClass("gotWrongAnswer")) {
-        showAnswer();
-        // var timeoutTest = setTimeout(function() {   
-            $("#buttonNext").removeClass("hidden"); 
-        // }, 1200);
+        showAnswer(); 
+            $("#buttonNext").removeClass("hidden");
         $("#comment").removeClass("hidden").text("Sorry, no score");
     } else {
         $("#newImage").addClass("blur");
@@ -619,6 +617,7 @@ $("#buttonTryAgain").click(function() {
 // - giveUp() is triggered if the user gives up after a wrong answer, by clicking #buttonGiveUp:
 // - showAnswer() is run.
 // - The "Sorry, no score"-message shows.
+// - setTimeout is there to prevent users from clicking through the images too fast.
 
 function giveUp() {
     $('#soundOfFlip')[0].play();
@@ -626,7 +625,10 @@ function giveUp() {
     $("#newImage, #newImageBack").removeClass('blur');
     $("#comment").removeClass("hidden").text("Sorry, no score");
     $("#buttonTryAgain, #buttonGiveUp").addClass("hidden");
-    $("#buttonNext").removeClass("hidden");
+    $("#buttonNext").removeClass("hidden").addClass("disabled");
+    setTimeout(function () {
+        $("#buttonNext").removeClass("disabled")  
+    }, 500);
 };
 
 $("#buttonGiveUp").click(function() {
