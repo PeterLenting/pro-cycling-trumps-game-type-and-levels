@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: #101820;
+    background: linear-gradient(#3e3e40, black);
     color: #FEE715;
     text-align: center;
     min-height: 60px;
@@ -62,7 +62,7 @@ h2 {
 }
 
 .carousel-indicators li {
-    background-color: #101820;
+    background: linear-gradient(#3e3e40, black);
 }
 
 .carousel-control-next-icon {
@@ -89,7 +89,7 @@ h2 {
     width: 20em
 }
 
-#newImage, #newImageBack {
+#newImage, #newImageBack, #imageAllTime, #image2020 {
     box-shadow: /*5px 5px 5px rgba(0,0,0,.25);*/  0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -176,7 +176,7 @@ aside ul {
 
 #buttonMute, #buttonResetMenu {
  color: #FD5F00;
- background-color: #101820;
+ background: linear-gradient(#3e3e40, black);
  font-size: 2rem;
  margin-left: 10px;
  margin-right: 10px;
@@ -205,11 +205,11 @@ It looks a bit like an actuel scoreboard, which is applicable since it is a game
     width: 80px;
     font-weight: bold;
     border-radius: 11px;
-    box-shadow: 5px 5px 5px grey;
-    border-color: #101820;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    border: 0;
     font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem;
-    background: #101820;
+    background: linear-gradient(#3e3e40, black);
 }
 
 #scoreboardSp {
@@ -239,11 +239,11 @@ It looks a bit like an actuel scoreboard, which is applicable since it is a game
     width: 90px;
     font-weight: bold;
     border-radius: 11px;
-    box-shadow: 5px 5px 5px grey;
-    border-color: #101820;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    border: 0;
     font-family: 'Orbitron', sans-serif;
     font-size: 2.5rem;
-    background: #101820;
+    background: linear-gradient(#3e3e40, black);
     display: block;
     margin: 0 auto;
 }
@@ -278,7 +278,7 @@ It looks a bit like an actuel scoreboard, which is applicable since it is a game
     border: 3px solid #101820;
     border-radius: 25px;
     padding-bottom: 10px;
-    background-color: #FF652F;
+    background: linear-gradient(#FF652F, #FEE715);
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -332,11 +332,11 @@ It looks a bit like an actuel scoreboard, which is applicable since it is a game
     width: 40px;
     font-weight: bold;
     border-radius: 11px;
-    box-shadow: 5px 5px 5px grey;
-    border-color: #101820;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    border: 0;
     font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem;
-    background: #101820;
+    background: linear-gradient(#3e3e40, black);
 }
 
 #highScoreInputAllTime, #highScoreInput2020 {
@@ -370,7 +370,7 @@ input:focus {
     padding-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background: #101820;
+    background: linear-gradient(#3e3e40, black);
     color: #FEE715;
     border-radius: 25px;
     font-weight: bold;
@@ -395,7 +395,7 @@ input:focus {
 The orange color fits well in and makes the buttons stand out from the other buttons.*/
 #buttonHint {
     color: #FEE715;
-    background: #101820;
+    background: linear-gradient(#3e3e40, black);
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -503,7 +503,7 @@ The orange color fits well in and makes the buttons stand out from the other but
     border-color: #101820;
     font-family: 'Orbitron', sans-serif;
     font-size: 2.5rem;
-    background: #101820;
+    background: linear-gradient(#3e3e40, black);
     margin-top: 10px;
 }
 
@@ -559,7 +559,7 @@ The orange color fits well in and makes the buttons stand out from the other but
 }
 
 #social {
-    background: #101820;
+    background: linear-gradient(#3e3e40, black);
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
